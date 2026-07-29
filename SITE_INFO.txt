@@ -1,0 +1,17 @@
+KLEEM AFFILIÉS · Site enviado aos criadores
+=============================================
+
+🌐 URL AO VIVO: https://kleem-affilies.pages.dev
+
+Repo GitHub: sesametts/kleem-affilies (provável — a confirmar)
+Cloudflare Pages: projet "kleem-affilies", build auto a cada push na main
+Deploy: ~1 min após commit
+
+Pasta local (edição): /Users/bru_b/Downloads/kleem-upload/
+  - index.html (site principal)
+  - p1-lignes-fines.jpg, p2-taches.jpg, p3-acne.jpg, p4-mature.jpg (4 profils)
+  - video1..4.mp4/jpg (bibliothèque)
+
+Produto: Kleem Organics — Advanced Retinol Moisturizer
+Prix: moins de 30 € (21,99 € promo + livraison offerte)
+Shop TikTok: shop_id 7494603058199168547 (Kleem Organics FR)
