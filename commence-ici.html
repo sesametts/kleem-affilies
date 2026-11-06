@@ -235,6 +235,21 @@
   .kp-aloe b{display:block;font-size:15.5px;color:#0F6E56;margin-bottom:2px;}
   .kp-aloe strong{color:#0F6E56;}
   .kp-aloe-ico{font-size:28px;line-height:1;}
+
+  .kb{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+  .kb-i{background:#fff;border:1px solid var(--blue-soft);border-radius:14px;padding:16px 14px;text-align:center;box-shadow:0 4px 14px rgba(27,34,134,.06);}
+  .kb-ic{width:44px;height:44px;margin:0 auto 10px;border-radius:50%;background:var(--blue-pale);display:flex;align-items:center;justify-content:center;font-size:22px;}
+  .kb-i b{display:block;font-size:14px;color:#0F1863;margin-bottom:3px;}
+  .kb-i span{display:block;font-size:12.5px;color:var(--text-soft);line-height:1.45;}
+  .kf{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  .kf-i{border-radius:14px;padding:14px 16px;border:1px solid;}
+  .kf-i em{display:block;font-style:normal;font-size:10.5px;letter-spacing:1.6px;text-transform:uppercase;font-weight:800;margin-bottom:6px;}
+  .kf-i b{display:block;font-size:15px;color:#0F1863;margin-bottom:3px;}
+  .kf-i span{font-size:12.5px;color:var(--text-soft);line-height:1.5;}
+  .kf-green{background:#E9F6EF;border-color:#9FD3B6;} .kf-green em{color:#0F6E56;}
+  .kf-gold{background:#FFF6DF;border-color:#E9C46A;} .kf-gold em{color:#8B6F1A;}
+  .kf-blue{background:#EEF0FA;border-color:#9AA3E0;} .kf-blue em{color:#1B2286;}
+  @media(max-width:760px){.kb{grid-template-columns:1fr 1fr;}.kf{grid-template-columns:1fr 1fr;}}
 </style>
 </head>
 <body>
@@ -281,11 +296,11 @@
     </div>
 
     <div class="kp-label" style="margin-top:26px;">Ce qu'il fait</div>
-    <div class="kp-benef">
-      <div>✨ Rides &amp; fermeté</div>
-      <div>🌟 Éclat du teint &amp; taches</div>
-      <div>🔍 Texture &amp; pores</div>
-      <div>💧 Peau apaisée &amp; hydratée</div>
+    <div class="kb">
+      <div class="kb-i"><div class="kb-ic">✨</div><b>Rides &amp; fermeté</b><span>Atténue les ridules, raffermit</span></div>
+      <div class="kb-i"><div class="kb-ic">🌟</div><b>Éclat &amp; taches</b><span>Teint plus uniforme et lumineux</span></div>
+      <div class="kb-i"><div class="kb-ic">🔍</div><b>Texture &amp; pores</b><span>Peau plus lisse, pores affinés</span></div>
+      <div class="kb-i"><div class="kb-ic">💧</div><b>Apaisée &amp; hydratée</b><span>Apaise pendant que le rétinol agit</span></div>
     </div>
 
     <div class="kp-aloe">
@@ -294,13 +309,13 @@
     </div>
 
     <div class="kp-label" style="margin-top:22px;">La formule</div>
-    <div class="kp-form">
-      <div><b>Aloe vera bio</b><span>1<sup>er</sup> ingrédient · apaise et hydrate</span></div>
-      <div><b>Rétinol 0,5 %</b><span>Anti-âge</span></div>
-      <div><b>Acide hyaluronique</b><span>Hydrate et repulpe</span></div>
-      <div><b>Vitamine E</b><span>Protège</span></div>
-      <div><b>Thé vert</b><span>Apaise les rougeurs</span></div>
-      <div><b>Huile de jojoba</b><span>Nourrit</span></div>
+    <div class="kf">
+      <div class="kf-i kf-green"><em>🌿 Base</em><b>Aloe vera bio</b><span>1<sup>er</sup> ingrédient. Apaise et hydrate.</span></div>
+      <div class="kf-i kf-gold"><em>★ Star · 0,5 %</em><b>Rétinol</b><span>L'actif anti-âge n°1.</span></div>
+      <div class="kf-i kf-blue"><em>💧 Hydratation</em><b>Acide hyaluronique</b><span>Hydrate et repulpe.</span></div>
+      <div class="kf-i kf-green"><em>🛡 Antioxydant</em><b>Vitamine E</b><span>Protège la peau.</span></div>
+      <div class="kf-i kf-green"><em>🍃 Apaisant</em><b>Thé vert</b><span>Calme les rougeurs.</span></div>
+      <div class="kf-i kf-gold"><em>🌿 Nutrition</em><b>Huile de jojoba</b><span>Nourrit sans graisser.</span></div>
     </div>
 
     <details class="kp-inci">
