@@ -214,6 +214,14 @@
   .kp-elle-txt{font-size:11.5px;line-height:1.4;}
   .kp-elle-txt b{display:block;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:2px;}
   .kp-elle-txt i{color:#555;}
+
+  .kp-r3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:4px;}
+  .kp-r3 div{background:#fff;border:1px solid #F3B9B9;border-radius:12px;padding:14px 16px;}
+  .kp-r3 span{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;font-size:13px;margin-bottom:8px;}
+  .kp-r3 b{display:block;font-size:14.5px;color:#8E1B1B;margin-bottom:4px;}
+  .kp-r3 em{display:block;font-style:normal;font-size:13px;color:var(--text-soft);line-height:1.5;}
+  .kp-rules-title{font-size:16px !important;margin-bottom:12px !important;}
+  @media(max-width:760px){.kp-r3{grid-template-columns:1fr;gap:8px}}
 </style>
 </head>
 <body>
@@ -285,11 +293,11 @@
     <div class="kp-rules">
       <div class="kp-rules-txt">
         <div class="kp-rules-title">⚠️ Les 3 règles à respecter dans toutes tes vidéos</div>
-        <ol>
-          <li><b>Dis que c'est un rétinol.</b></li>
-          <li><b>Uniquement le soir</b> — jamais le matin.</li>
-          <li><b>Flacon airless :</b> une pression suffit, pas besoin de l'ouvrir.</li>
-        </ol>
+        <div class="kp-r3">
+          <div><span>1</span><b>Dis que c'est un rétinol</b><em>C'est un actif puissant : la cliente doit le savoir.</em></div>
+          <div><span>2</span><b>Uniquement le soir</b><em>Jamais le matin : le rétinol rend la peau sensible au soleil.</em></div>
+          <div><span>3</span><b>Flacon airless</b><em>Une pression suffit, pas besoin de l'ouvrir.</em></div>
+        </div>
       </div>
       <div class="kp-rules-vid">
         <video controls preload="metadata" playsinline poster="produit-ouverture.jpg"><source src="produit-ouverture.mp4" type="video/mp4"></video>
