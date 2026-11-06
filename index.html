@@ -873,244 +873,40 @@
       .warning-card-new { grid-template-columns: 1fr; padding: 20px; }
       .warning-video-block { max-width: 260px; margin: 0 auto; }
     }
-  </style>
+    /* TOP BAR */
+  .topbar{position:sticky;top:0;z-index:90;background:linear-gradient(90deg,#141C6E 0%,#1B2286 55%,#2B34A8 100%);border-bottom:3px solid #2A36DE;box-shadow:0 2px 14px rgba(11,18,64,.22);}
+  .topbar-inner{max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:10px 24px;flex-wrap:wrap;}
+  .topbar-brand{display:flex;align-items:center;gap:8px;text-decoration:none;font-family:'Manrope',sans-serif;}
+  .tb-name{color:#fff;font-size:12.5px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase;}
+  .tb-x{color:#2A36DE;font-size:12px;}
+  .topbar-nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  .nav-item{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid rgba(255,255,255,.34);border-radius:999px;padding:8px 18px;color:#fff;text-decoration:none;cursor:pointer;font-family:'Manrope',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;transition:background .18s,border-color .18s;}
+  .nav-item:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.6);}
+  .nav-item.active{background:#fff;color:#1B2286;border-color:#fff;}
+
+
+  .topbar *{box-sizing:border-box;}
+  #bibliotheque,section[id]{scroll-margin-top:90px;}
+  .topbar + .container{padding-top:18px;}
+</style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="site-brand">Kleem Organics <span class="divider">×</span> Sesame</div>
-    <div class="site-tag">Programme affiliés · TikTok Shop France</div>
-  </header>
-
-  <!-- HERO ÉDITORIAL · Méthode créative TikTok Shop -->
-  <section class="hero">
-    <div class="hero-eyebrow">Méthode créative TikTok Shop</div>
-    <h1 class="hero-title">Vidéos, hooks, formats :<br>tout ce qui <em>fait vendre.</em></h1>
-    <p class="hero-subtitle">Un programme piloté par Sesame pour les créatrices Kleem. Chaque mois, on décrypte tout ce qui fait vendre sur TikTok Shop — vidéos, hooks et formats à reproduire dans tes contenus.</p>
-    <div class="hero-features">
-      <a class="feature" href="#retinol-decode">
-        <div class="feature-icon" style="font-size: 28px;">📦</div>
-        <div class="feature-title">Décodage produit</div>
-        <div class="feature-desc">Tout sur la crème rétinol Kleem — actifs, cible et angles de vente.</div>
-      </a>
-      <a class="feature" href="#zones-probleme">
-        <div class="feature-icon" style="font-size: 28px;">📅</div>
-        <div class="feature-title">Contenu du mois</div>
-        <div class="feature-desc">Le format viral de septembre — copie ce vidéo et fais des ventes.</div>
-      </a>
-      <a class="feature" href="#bibliotheque">
-        <div class="feature-icon" style="font-size: 28px;">📚</div>
-        <div class="feature-title">Bibliothèque</div>
-        <div class="feature-desc">4 vidéos performantes du marché rétinol, décryptées.</div>
-      </a>
-    </div>
-
-    <!-- PILL NAV · sous les features -->
-    <nav class="pill-nav" style="margin-top: 12px;">
-      <a class="pill" href="#retinol-decode" style="background: linear-gradient(135deg, var(--blue-deep), var(--blue)); color: white;"><span class="pill-icon" style="background: rgba(255,255,255,0.25); color: white;">👇</span> Commence par ici <span style="margin-left:6px;">→</span></a>
-      <a class="pill" href="#octobre-talking-head" style="background: linear-gradient(135deg, var(--blue-deep), var(--blue)); color: white;"><span class="pill-icon" style="background: rgba(255,255,255,0.25); color: white;">📅</span> Octobre · Contenu <span style="margin-left:6px;">→</span></a>
-      <a class="pill" href="#campagne-promo" style="background: #4A5490; color: white;"><span class="pill-icon" style="background: rgba(255,255,255,0.25); color: white;">📅</span> Septembre · Contenu <span style="margin-left:6px;">→</span></a>
-      <a class="pill" href="#aout-contenu" style="background: #4A5490; color: white;"><span class="pill-icon" style="background: rgba(255,255,255,0.25); color: white;">📅</span> Août · Contenu <span style="margin-left:6px;">→</span></a>
-      <a class="pill gold" href="#bibliotheque"><span class="pill-icon">📚</span> Bibliothèque <span style="margin-left:6px;">→</span></a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="topbar-brand" href="index.html">
+      <span class="tb-name">Kleem Organics</span>
+      <span class="tb-x">×</span>
+      <span class="tb-name">Sesame</span>
+    </a>
+    <nav class="topbar-nav">
+      <a class="nav-item" href="commence-ici.html">Commence ici</a>
+      <a class="nav-item active" href="index.html">Les meilleurs conseils</a>
+      <a class="nav-item" href="index.html#bibliotheque">Plus inspiration</a>
     </nav>
-  </section>
+  </div>
+</header>
 
-  <!-- MAIN · NOUVEAU HERO EN CARDS -->
-  <main class="container">
-    <h1 class="produit-h1">Kleem Organics Advanced Retinol Moisturizer</h1>
-
-    <div class="produit-cards">
-
-      <!-- CARD 1 · LE PRODUIT + IMAGE -->
-      <div class="produit-card">
-        <div class="produit-card-image">
-          <img src="https://kleemorganics.com/cdn/shop/files/Retinol_Cream_New.png?v=1781275855&width=555" alt="Kleem Advanced Retinol Moisturizer">
-        </div>
-        <div>
-          <div class="produit-card-label">📦 Le produit</div>
-          <div class="produit-card-title" style="margin-bottom: 14px;">Rétinol + 5 actifs bio = anti-âge sans agression</div>
-
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px;">
-            <div style="background: #FFF8E1; border: 1px solid #E5B94D; border-radius: 10px; padding: 12px 14px;">
-              <div style="font-size: 10px; letter-spacing: 1.5px; color: #8B6F1A; font-weight: 800; text-transform: uppercase; margin-bottom: 6px;">⚡ Puissance anti-âge</div>
-              <div style="font-size: 14px; font-weight: 800; color: #0F1863; margin-bottom: 4px;">Rétinol 0,5 %</div>
-              <div style="font-size: 11.5px; color: #6B7092; line-height: 1.45;">Anti-âge · Renouvellement cellulaire</div>
-            </div>
-            <div style="background: #E1F5EE; border: 1px solid #0F6E56; border-radius: 10px; padding: 12px 14px;">
-              <div style="font-size: 10px; letter-spacing: 1.5px; color: #0F6E56; font-weight: 800; text-transform: uppercase; margin-bottom: 6px;">🛡 Protection de la peau</div>
-              <div style="font-size: 14px; font-weight: 800; color: #0F1863; margin-bottom: 4px;">5 ingrédients bio</div>
-              <div style="font-size: 11.5px; color: #6B7092; line-height: 1.45;">Barrière cutanée préservée & renforcée</div>
-            </div>
-          </div>
-
-          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-            <span style="background: var(--blue-pale); color: var(--blue-deep); padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 700;">🌿 Bio</span>
-            <span style="background: var(--blue-pale); color: var(--blue-deep); padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 700;">🌱 Vegan</span>
-            <span style="background: var(--blue-pale); color: var(--blue-deep); padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 700;">🐰 Sans cruauté</span>
-            <span style="background: var(--blue-pale); color: var(--blue-deep); padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 700;">🇺🇸 Fabriqué aux USA</span>
-            <span style="background: var(--blue-pale); color: var(--blue-deep); padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 700;">💧 Tous types de peau</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD 2 · POUR QUI C'EST FAIT -->
-      <div class="produit-card" id="retinol-decode">
-        <div class="produit-card-images-grid">
-          <img src="p1-lignes-fines.jpg" alt="Premières ridules">
-          <img src="p2-taches.jpg" alt="Taches">
-          <img src="p3-acne.jpg" alt="Acné">
-          <img src="p4-mature.jpg" alt="Peau mature">
-        </div>
-        <div>
-          <div class="produit-card-title">Raisons de choisir Kleem</div>
-
-          <!-- Destaque 2-en-1 -->
-          <div style="background: linear-gradient(135deg,#EEF0FA 0%,#E1F5EE 100%); border: 1px solid #1B2286; border-radius: 10px; padding: 12px 16px; margin-bottom: 10px;">
-            <div style="font-size: 10px; letter-spacing: 1.5px; color: #1B2286; font-weight: 800; text-transform: uppercase; margin-bottom: 4px;">✨ Le duo Kleem</div>
-            <div style="font-size: 14px; font-weight: 800; color: #0F1863;">Anti-âge + protection de la barrière de la peau <span style="color: #1B2286;">en un seul pot</span></div>
-          </div>
-
-          <!-- Rituel du soir -->
-          <div style="background: #F7F3FF; border: 1px solid #6B4EBF; border-left: 4px solid #6B4EBF; border-radius: 8px; padding: 10px 14px; margin-bottom: 14px;">
-            <div style="font-size: 10px; letter-spacing: 1.5px; color: #6B4EBF; font-weight: 800; text-transform: uppercase; margin-bottom: 3px;">🌙 Rituel du soir</div>
-            <div style="font-size: 12.5px; color: #0F1863; line-height: 1.4;">Traitement nocturne — s'applique uniquement le soir, quand la peau se régénère</div>
-          </div>
-
-          <!-- Grid 2×2 · 4 categorias -->
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-
-            <div style="background: white; border: 1px solid var(--border); border-left: 3px solid #1B2286; border-radius: 6px; padding: 10px 12px;">
-              <div style="font-size: 10.5px; font-weight: 800; color: #1B2286; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px;">Anti-âge · rides</div>
-              <div style="font-size: 12px; color: #0F1863; line-height: 1.4;">Ridules & rides · perte de fermeté</div>
-            </div>
-
-            <div style="background: white; border: 1px solid var(--border); border-left: 3px solid #C9A227; border-radius: 6px; padding: 10px 12px;">
-              <div style="font-size: 10.5px; font-weight: 800; color: #8B6F1A; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px;">Éclat & teint</div>
-              <div style="font-size: 12px; color: #0F1863; line-height: 1.4;">Hyperpigmentation · peau terne</div>
-            </div>
-
-            <div style="background: white; border: 1px solid var(--border); border-left: 3px solid #0F6E56; border-radius: 6px; padding: 10px 12px;">
-              <div style="font-size: 10.5px; font-weight: 800; color: #0F6E56; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px;">Imperfections</div>
-              <div style="font-size: 12px; color: #0F1863; line-height: 1.4;">Boutons & pores obstrués · texture rugueuse</div>
-            </div>
-
-            <div style="background: white; border: 1px solid var(--border); border-left: 3px solid #0F6E56; border-radius: 6px; padding: 10px 12px;">
-              <div style="font-size: 10.5px; font-weight: 800; color: #0F6E56; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px;">Confort & barrière</div>
-              <div style="font-size: 12px; color: #0F1863; line-height: 1.4;">Barrière fragilisée · rougeurs & irritations</div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD 3 · WARNING RÉTINOL + VIDÉO -->
-      <div class="warning-card-new">
-        <div>
-          <div class="warning-card-head">
-            <div class="warning-icon">⚠</div>
-            <div>
-              <div class="warning-label">Message important pour les créateurs</div>
-              <div class="warning-title">Ce produit est un RÉTINOL — 3 règles à respecter dans TOUTES tes vidéos</div>
-            </div>
-          </div>
-          <div class="warning-points">
-            <div class="warning-point">
-              <span class="warning-point-bullet">1.</span>
-              <div><strong>Mentionne clairement qu'il s'agit d'un rétinol.</strong> C'est un actif puissant — la spectatrice doit le savoir avant d'acheter.</div>
-            </div>
-            <div class="warning-point">
-              <span class="warning-point-bullet">2.</span>
-              <div><strong>Précise que l'application se fait UNIQUEMENT le soir.</strong> Le rétinol rend la peau photosensible — jamais le matin.</div>
-            </div>
-            <div class="warning-point">
-              <span class="warning-point-bullet">3.</span>
-              <div><strong>Montre la bonne façon d'ouvrir le produit.</strong> Le Kleem est un flacon <strong>airless pump</strong> : une seule pression libère la quantité parfaite pour une application — pas besoin d'ouvrir ni de doser.</div>
-            </div>
-          </div>
-        </div>
-        <div class="warning-video-block">
-          <div class="warning-video-badge">⚠ Comment ouvrir le produit</div>
-          <video controls preload="metadata" poster="produit-ouverture.jpg" playsinline>
-            <source src="produit-ouverture.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- ============ FORMULE COMPLÈTE · INGRÉDIENTS ============ -->
-    <div class="produit-card" id="formule" style="display: block; padding: 26px 28px; margin-top: 18px;">
-      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px;">
-        <div style="width: 36px; height: 36px; border-radius: 50%; background: #E1F5EE; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #0F6E56;">🧪</div>
-        <div>
-          <div class="produit-card-label" style="margin-bottom: 2px; color: #0F6E56;">Formule complète</div>
-          <div class="produit-card-title" style="margin-bottom: 0;">Les ingrédients qui font la différence</div>
-        </div>
-      </div>
-      <div class="produit-card-desc" style="margin: 6px 0 18px 48px;">5 actifs stars mis en avant sur l'étiquette + 7 ingrédients bio qui protègent, hydratent et régénèrent — pendant que le rétinol travaille.</div>
-
-      <!-- 5 actifs stars (comme sur l'étiquette) -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 22px;">
-
-        <div style="background: #FFF8E1; border: 1px solid #E5B94D; border-radius: 12px; padding: 14px 16px;">
-          <div style="font-size: 10px; letter-spacing: 1.5px; color: #8B6F1A; font-weight: 800; text-transform: uppercase; margin-bottom: 4px;">★ Star · 0,5 %</div>
-          <div style="font-size: 15px; font-weight: 800; color: #0F1863; margin-bottom: 6px;">Rétinol</div>
-          <div style="font-size: 12px; color: #6B7092; line-height: 1.5;">L'actif anti-âge n°1. Concentration 0,5 %. Renouvelle les cellules, atténue rides, taches et pores.</div>
-        </div>
-
-        <div style="background: #EEF0FA; border: 1px solid #1B2286; border-radius: 12px; padding: 14px 16px;">
-          <div style="font-size: 10px; letter-spacing: 1.5px; color: #1B2286; font-weight: 800; text-transform: uppercase; margin-bottom: 4px;">💧 Hydratation</div>
-          <div style="font-size: 15px; font-weight: 800; color: #0F1863; margin-bottom: 6px;">Acide Hyaluronique</div>
-          <div style="font-size: 12px; color: #6B7092; line-height: 1.5;">Hydrate en profondeur et repulpe la peau.</div>
-        </div>
-
-        <div style="background: #E1F5EE; border: 1px solid #0F6E56; border-radius: 12px; padding: 14px 16px;">
-          <div style="font-size: 10px; letter-spacing: 1.5px; color: #0F6E56; font-weight: 800; text-transform: uppercase; margin-bottom: 4px;">🛡 Antioxydant</div>
-          <div style="font-size: 15px; font-weight: 800; color: #0F1863; margin-bottom: 6px;">Vitamine E</div>
-          <div style="font-size: 12px; color: #6B7092; line-height: 1.5;">Protège la peau des radicaux libres et prolonge l'effet du rétinol.</div>
-        </div>
-
-        <div style="background: #E1F5EE; border: 1px solid #0F6E56; border-radius: 12px; padding: 14px 16px;">
-          <div style="font-size: 10px; letter-spacing: 1.5px; color: #0F6E56; font-weight: 800; text-transform: uppercase; margin-bottom: 4px;">🍃 Apaisant</div>
-          <div style="font-size: 15px; font-weight: 800; color: #0F1863; margin-bottom: 6px;">Thé Vert</div>
-          <div style="font-size: 12px; color: #6B7092; line-height: 1.5;">Antioxydant naturel, anti-inflammatoire, apaise les rougeurs.</div>
-        </div>
-
-        <div style="background: #FFF8E1; border: 1px solid #E5B94D; border-radius: 12px; padding: 14px 16px;">
-          <div style="font-size: 10px; letter-spacing: 1.5px; color: #8B6F1A; font-weight: 800; text-transform: uppercase; margin-bottom: 4px;">🌿 Nutrition</div>
-          <div style="font-size: 15px; font-weight: 800; color: #0F1863; margin-bottom: 6px;">Huile de Jojoba</div>
-          <div style="font-size: 12px; color: #6B7092; line-height: 1.5;">Équilibre le sébum, nourrit sans obstruer les pores.</div>
-        </div>
-
-      </div>
-
-      <!-- Ingrédients complémentaires -->
-      <details style="border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; background: var(--off-white); margin-bottom: 12px;">
-        <summary style="cursor: pointer; font-weight: 800; color: var(--blue-deep); font-size: 13px; letter-spacing: 0.5px;">🌿 Ingrédients complémentaires (7 alliés bio)</summary>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 14px;">
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Aloe Vera bio</strong> — Base apaisante et hydratante (1er ingrédient).</div>
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Beurre de Karité bio</strong> — Nutrition profonde, protège la barrière.</div>
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Huile de Tournesol bio</strong> — Nourrit et riche en oméga.</div>
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Panthénol (Vitamine B5)</strong> — Apaise et renforce la barrière cutanée.</div>
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Propolis</strong> — Cicatrisant naturel, anti-bactérien.</div>
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Glycérine végétale</strong> — Hydratant humectant, cascher.</div>
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Xanthan Gum</strong> — Texture soyeuse d'origine naturelle.</div>
-        </div>
-      </details>
-
-      <!-- INCI complète -->
-      <details style="border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; background: var(--off-white);">
-        <summary style="cursor: pointer; font-weight: 800; color: var(--blue-deep); font-size: 13px; letter-spacing: 0.5px;">📋 Liste INCI complète</summary>
-        <div style="font-size: 12px; color: var(--text-soft); line-height: 1.75; margin-top: 12px; font-family: 'Helvetica', sans-serif;">
-          Aloe Barbadensis Leaf Juice (Organic Aloe), Aqua, Cassia Angustifolia Seed Polysaccharide (Botanical Hyaluronic Acid), Isopropyl Palmitate, Helianthus Annuus Oil (Organic Sunflower), Glyceryl Stearate, Cetyl Alcohol, Retinol, Stearic Acid, Kosher Vegetable Glycerin, Butyrospermum Parkii Butter (Organic Shea), Simmondsia Chinensis Oil (Organic Jojoba), Panthenol (Vitamin B5), Tocopherol Acetate (Vitamin E), Camelia Sinensis Extract (Green Tea), Resina Propoli Extract (Propolis), Xanthan Gum, Dehydroacetic Acid, Benzyl Alcohol, Tetrasodium Glutamate Diacetate, Rose Ether, Ethylhexylglycerin, Orange Fragrance.
-        </div>
-      </details>
-    </div>
-
-  </main>
-
-  <!-- ═══════════ ZONES À PROBLÈME · FORMAT DERMATO ═══════════ -->
   <div class="container">
     <!-- ═══════════ SEPTEMBRE · CONTENU DU MOIS ═══════════ -->
     <!-- ═══════════ NOVEMBRE · VIDÉO INSPIRATION · GRANDE SŒUR ═══════════ -->
