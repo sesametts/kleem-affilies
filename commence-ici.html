@@ -230,6 +230,11 @@
   .produit-card-desc{font-size:14.5px;color:var(--text-soft);line-height:1.6;}
   .produit-card-desc strong{color:var(--blue);font-weight:800;}
   @media(max-width:760px){#formule{padding:20px !important;}}
+
+  .kp-aloe{display:flex;gap:14px;align-items:center;margin-top:22px;background:#E9F6EF;border:1px solid #9FD3B6;border-radius:14px;padding:16px 18px;font-size:14px;line-height:1.55;color:var(--text);}
+  .kp-aloe b{display:block;font-size:15.5px;color:#0F6E56;margin-bottom:2px;}
+  .kp-aloe strong{color:#0F6E56;}
+  .kp-aloe-ico{font-size:28px;line-height:1;}
 </style>
 </head>
 <body>
@@ -283,74 +288,25 @@
       <div>💧 Peau apaisée &amp; hydratée</div>
     </div>
 
-    <!-- ============ FORMULE COMPLÈTE · INGRÉDIENTS ============ -->
-    <div class="produit-card" id="formule" style="display: block; padding: 26px 28px; margin-top: 18px;">
-      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px;">
-        <div style="width: 36px; height: 36px; border-radius: 50%; background: #E1F5EE; display: flex; align-items: center; justify-content: center; font-size: 18px; color: #0F6E56;">🧪</div>
-        <div>
-          <div class="produit-card-label" style="margin-bottom: 2px; color: #0F6E56;">Formule complète</div>
-          <div class="produit-card-title" style="margin-bottom: 0;">Les ingrédients qui font la différence</div>
-        </div>
-      </div>
-      <div class="produit-card-desc" style="margin: 6px 0 18px 48px;">5 actifs stars mis en avant sur l'étiquette + 7 ingrédients bio qui protègent, hydratent et régénèrent — pendant que le rétinol travaille.</div>
-
-      <!-- 5 actifs stars (comme sur l'étiquette) -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 22px;">
-
-        <div style="background: #FFF8E1; border: 1px solid #E5B94D; border-radius: 12px; padding: 14px 16px;">
-          <div style="font-size: 10px; letter-spacing: 1.5px; color: #8B6F1A; font-weight: 800; text-transform: uppercase; margin-bottom: 4px;">★ Star · 0,5 %</div>
-          <div style="font-size: 15px; font-weight: 800; color: #0F1863; margin-bottom: 6px;">Rétinol</div>
-          <div style="font-size: 12px; color: #6B7092; line-height: 1.5;">L'actif anti-âge n°1. Concentration 0,5 %. Renouvelle les cellules, atténue rides, taches et pores.</div>
-        </div>
-
-        <div style="background: #EEF0FA; border: 1px solid #1B2286; border-radius: 12px; padding: 14px 16px;">
-          <div style="font-size: 10px; letter-spacing: 1.5px; color: #1B2286; font-weight: 800; text-transform: uppercase; margin-bottom: 4px;">💧 Hydratation</div>
-          <div style="font-size: 15px; font-weight: 800; color: #0F1863; margin-bottom: 6px;">Acide Hyaluronique</div>
-          <div style="font-size: 12px; color: #6B7092; line-height: 1.5;">Hydrate en profondeur et repulpe la peau.</div>
-        </div>
-
-        <div style="background: #E1F5EE; border: 1px solid #0F6E56; border-radius: 12px; padding: 14px 16px;">
-          <div style="font-size: 10px; letter-spacing: 1.5px; color: #0F6E56; font-weight: 800; text-transform: uppercase; margin-bottom: 4px;">🛡 Antioxydant</div>
-          <div style="font-size: 15px; font-weight: 800; color: #0F1863; margin-bottom: 6px;">Vitamine E</div>
-          <div style="font-size: 12px; color: #6B7092; line-height: 1.5;">Protège la peau des radicaux libres et prolonge l'effet du rétinol.</div>
-        </div>
-
-        <div style="background: #E1F5EE; border: 1px solid #0F6E56; border-radius: 12px; padding: 14px 16px;">
-          <div style="font-size: 10px; letter-spacing: 1.5px; color: #0F6E56; font-weight: 800; text-transform: uppercase; margin-bottom: 4px;">🍃 Apaisant</div>
-          <div style="font-size: 15px; font-weight: 800; color: #0F1863; margin-bottom: 6px;">Thé Vert</div>
-          <div style="font-size: 12px; color: #6B7092; line-height: 1.5;">Antioxydant naturel, anti-inflammatoire, apaise les rougeurs.</div>
-        </div>
-
-        <div style="background: #FFF8E1; border: 1px solid #E5B94D; border-radius: 12px; padding: 14px 16px;">
-          <div style="font-size: 10px; letter-spacing: 1.5px; color: #8B6F1A; font-weight: 800; text-transform: uppercase; margin-bottom: 4px;">🌿 Nutrition</div>
-          <div style="font-size: 15px; font-weight: 800; color: #0F1863; margin-bottom: 6px;">Huile de Jojoba</div>
-          <div style="font-size: 12px; color: #6B7092; line-height: 1.5;">Équilibre le sébum, nourrit sans obstruer les pores.</div>
-        </div>
-
-      </div>
-
-      <!-- Ingrédients complémentaires -->
-      <details style="border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; background: var(--off-white); margin-bottom: 12px;">
-        <summary style="cursor: pointer; font-weight: 800; color: var(--blue-deep); font-size: 13px; letter-spacing: 0.5px;">🌿 Ingrédients complémentaires (7 alliés bio)</summary>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 14px;">
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Aloe Vera bio</strong> — Base apaisante et hydratante (1er ingrédient).</div>
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Beurre de Karité bio</strong> — Nutrition profonde, protège la barrière.</div>
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Huile de Tournesol bio</strong> — Nourrit et riche en oméga.</div>
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Panthénol (Vitamine B5)</strong> — Apaise et renforce la barrière cutanée.</div>
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Propolis</strong> — Cicatrisant naturel, anti-bactérien.</div>
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Glycérine végétale</strong> — Hydratant humectant, cascher.</div>
-          <div style="font-size: 12.5px; color: var(--text); line-height: 1.6;"><strong style="color: var(--blue-deep);">Xanthan Gum</strong> — Texture soyeuse d'origine naturelle.</div>
-        </div>
-      </details>
-
-      <!-- INCI complète -->
-      <details style="border: 1px solid var(--border); border-radius: 12px; padding: 14px 18px; background: var(--off-white);">
-        <summary style="cursor: pointer; font-weight: 800; color: var(--blue-deep); font-size: 13px; letter-spacing: 0.5px;">📋 Liste INCI complète</summary>
-        <div style="font-size: 12px; color: var(--text-soft); line-height: 1.75; margin-top: 12px; font-family: 'Helvetica', sans-serif;">
-          Aloe Barbadensis Leaf Juice (Organic Aloe), Aqua, Cassia Angustifolia Seed Polysaccharide (Botanical Hyaluronic Acid), Isopropyl Palmitate, Helianthus Annuus Oil (Organic Sunflower), Glyceryl Stearate, Cetyl Alcohol, Retinol, Stearic Acid, Kosher Vegetable Glycerin, Butyrospermum Parkii Butter (Organic Shea), Simmondsia Chinensis Oil (Organic Jojoba), Panthenol (Vitamin B5), Tocopherol Acetate (Vitamin E), Camelia Sinensis Extract (Green Tea), Resina Propoli Extract (Propolis), Xanthan Gum, Dehydroacetic Acid, Benzyl Alcohol, Tetrasodium Glutamate Diacetate, Rose Ether, Ethylhexylglycerin, Orange Fragrance.
-        </div>
-      </details>
+    <div class="kp-aloe">
+      <div class="kp-aloe-ico">🌿</div>
+      <div><b>Une base aloe vera, pas une base eau</b>La plupart des crèmes ont l'eau comme 1<sup>er</sup> ingrédient. Chez Kleem, c'est l'<strong>aloe vera bio</strong> : il apaise et hydrate la peau pendant que le rétinol agit.</div>
     </div>
+
+    <div class="kp-label" style="margin-top:22px;">La formule</div>
+    <div class="kp-form">
+      <div><b>Aloe vera bio</b><span>1<sup>er</sup> ingrédient · apaise et hydrate</span></div>
+      <div><b>Rétinol 0,5 %</b><span>Anti-âge</span></div>
+      <div><b>Acide hyaluronique</b><span>Hydrate et repulpe</span></div>
+      <div><b>Vitamine E</b><span>Protège</span></div>
+      <div><b>Thé vert</b><span>Apaise les rougeurs</span></div>
+      <div><b>Huile de jojoba</b><span>Nourrit</span></div>
+    </div>
+
+    <details class="kp-inci">
+      <summary>📋 Liste INCI complète</summary>
+      <p>Aloe Barbadensis Leaf Juice (Organic Aloe), Aqua, Cassia Angustifolia Seed Polysaccharide (Botanical Hyaluronic Acid), Isopropyl Palmitate, Helianthus Annuus Oil (Organic Sunflower), Glyceryl Stearate, Cetyl Alcohol, Retinol, Stearic Acid, Kosher Vegetable Glycerin, Butyrospermum Parkii Butter (Organic Shea), Simmondsia Chinensis Oil (Organic Jojoba), Panthenol (Vitamin B5), Tocopherol Acetate (Vitamin E), Camelia Sinensis Extract (Green Tea), Resina Propoli Extract (Propolis), Xanthan Gum, Dehydroacetic Acid, Benzyl Alcohol, Tetrasodium Glutamate Diacetate, Rose Ether, Ethylhexylglycerin, Orange Fragrance.</p>
+    </details>
 
     <div class="kp-rules">
       <div class="kp-rules-txt">
