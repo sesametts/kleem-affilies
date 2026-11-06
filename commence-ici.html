@@ -249,7 +249,9 @@
   .kf-green,.kf-gold,.kf-blue{background:#fff;border-color:var(--blue-soft);box-shadow:0 4px 14px rgba(27,34,134,.06);} .kf-i em{color:var(--blue);}
   @media(max-width:760px){.kb{grid-template-columns:1fr 1fr;}.kf{grid-template-columns:1fr 1fr;}}
 
-  .hk{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+  .hk{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .hk-bf{border-color:#E9C46A;background:#FFFBF0;} .hk-bf .hk-t{color:#8B6F1A;}
+  @media(max-width:1000px){.hk{grid-template-columns:1fr 1fr;}}
   .hk-col{background:#fff;border:1px solid var(--blue-soft);border-radius:14px;padding:16px 18px;box-shadow:0 4px 14px rgba(27,34,134,.06);}
   .hk-t{font-size:12px;letter-spacing:1.8px;text-transform:uppercase;font-weight:800;color:var(--blue);margin-bottom:10px;}
   .hk-col p{margin:0 0 10px;font-size:14.5px;line-height:1.5;color:#0F1863;font-weight:600;font-style:italic;background:var(--blue-pale);border-radius:10px;padding:10px 12px;}
@@ -266,6 +268,15 @@
   .pt p{margin:0;font-size:14px;line-height:1.5;color:var(--text);}
   .pt b{color:#0F1863;}
   @media(max-width:760px){.pt{grid-template-columns:1fr;}}
+
+  .dd2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .dd2-col{border-radius:14px;padding:16px 18px;border:1px solid;}
+  .dd2-ok{background:#EFF8F2;border-color:#A8D8B9;} .dd2-ko{background:#FFF2F2;border-color:#F3B9B9;}
+  .dd2-t{font-weight:800;font-size:14px;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;}
+  .dd2-ok .dd2-t{color:#1E8E5A;} .dd2-ko .dd2-t{color:#C62828;}
+  .dd2 ul{margin:0;padding-left:18px;font-size:14px;line-height:1.7;color:var(--text);}
+  .dd2 b{color:#0F1863;}
+  @media(max-width:760px){.dd2{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -380,10 +391,15 @@
   <div class="container">
   <section class="sec">
     <div class="eyebrow"><span class="eyebrow-num">04</span><span class="eyebrow-rule"></span><span class="eyebrow-txt">Quoi dire dans ta vidéo</span></div>
-    <h2 class="sec-title ed">Un hook pour accrocher, puis les points clés</h2>
-    <p class="sec-intro">Choisis un hook pour ta première seconde, puis glisse ces points dans ta vidéo.</p>
+    <h2 class="sec-title ed">Le hook, puis ce qu'il faut faire et éviter</h2>
+    <p class="sec-intro">Choisis un hook pour ta première seconde, puis suis ces règles en filmant.</p>
     <div class="kp-label">Idées de hooks</div>
     <div class="hk">
+      <div class="hk-col hk-bf">
+        <div class="hk-t">🔥 Black Friday</div>
+        <p>« 1 an de crème anti-âge au rétinol pour 65 €. Oui, tu as bien lu. »</p>
+        <p>« Ta crème anti-âge au rétinol à 28 € au lieu de 38 €, c'est seulement pour la Black Friday. »</p>
+      </div>
       <div class="hk-col">
         <div class="hk-t">👩 Peau mature</div>
         <p>« 38 ans, et voilà ce que ma routine du soir a changé en 6 semaines. »</p>
@@ -400,12 +416,28 @@
         <p>« Pourquoi ton rétinol t'irrite — et comment l'éviter. »</p>
       </div>
     </div>
-    <div class="kp-label" style="margin-top:24px;">Les points à dire</div>
-    <div class="pt">
-      <div><span>🧴</span><p><b>1 pot = 4 mois de crème de nuit.</b> Avec l'offre 3 pots à 65 €, c'est 1 an de crème.</p></div>
-      <div><span>🌿</span><p><b>Le rétinol, l'actif anti-âge le plus puissant.</b> Formulé à l'aloe vera : doux, pour tous les soirs, sans tiraillements ni irritations.</p></div>
-      <div><span>☀️</span><p><b>Crème solaire le lendemain matin,</b> comme avec tout soin au rétinol.</p></div>
-      <div><span>🛒</span><p><b>Black Friday :</b> 1 pot à 28 €, 2 pots à 50 €, 3 pots à 65 €, dans le panier orange.</p></div>
+    <div class="kp-label" style="margin-top:24px;">À faire / À éviter</div>
+    <div class="dd2">
+      <div class="dd2-col dd2-ok">
+        <div class="dd2-t">✓ À faire</div>
+        <ul>
+          <li><b>Bonne lumière :</b> filme de jour, face à une fenêtre.</li>
+          <li><b>Montre l'application :</b> la crème sur ton visage, la texture visible.</li>
+          <li><b>Dis que c'est un rétinol,</b> à utiliser uniquement le soir, avec un SPF le lendemain.</li>
+          <li><b>Donne l'argument prix :</b> 1 pot = 4 mois, 3 pots à 65 € = 1 an de crème.</li>
+          <li><b>Finis sur l'offre :</b> « dans le panier orange, tant qu'il en reste ».</li>
+        </ul>
+      </div>
+      <div class="dd2-col dd2-ko">
+        <div class="dd2-t">✕ À éviter</div>
+        <ul>
+          <li>Pièce sombre ou lumière jaune.</li>
+          <li>Le pot fermé, jamais appliqué.</li>
+          <li>Dire de l'utiliser le matin.</li>
+          <li>Promettre des résultats médicaux (« ça efface les rides »).</li>
+          <li>Parler de l'offre dès la première seconde.</li>
+        </ul>
+      </div>
     </div>
   </section>
   </div>
