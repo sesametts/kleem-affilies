@@ -199,6 +199,12 @@
   .kp-rules-vid video{width:100%;display:block;border-radius:12px;aspect-ratio:9/16;object-fit:cover;background:#000;}
   .kp-rules-cap{font-size:11px;text-align:center;color:#8E1B1B;font-weight:700;margin-top:6px;}
   @media(max-width:760px){.kp{grid-template-columns:1fr}.kp-img{max-width:220px;margin:0 auto}.kp-rules{grid-template-columns:1fr}.kp-rules-vid{max-width:220px;margin:0 auto}}
+
+  /* 03 · TOP VIDÉOS */
+  .tv{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:820px;}
+  .tv-item video{width:100%;display:block;aspect-ratio:9/16;object-fit:cover;background:#000;border:1px solid var(--blue-soft);border-radius:12px;}
+  .tv-cap{font-size:12px;font-weight:700;color:var(--blue-deep);text-align:center;margin-top:6px;}
+  @media(max-width:760px){.tv{grid-template-columns:repeat(2,1fr);gap:10px;}}
 </style>
 </head>
 <body>
@@ -276,6 +282,24 @@
         <div class="kp-rules-cap">Comment ouvrir le produit</div>
       </div>
     </div>
+  </div>
+
+
+  <div class="container"><div class="sec-arrow"><span>↓</span></div></div>
+
+  <!-- ═══════════ 03 · TOP VIDÉOS ═══════════ -->
+  <div class="container">
+  <section class="sec">
+    <div class="eyebrow"><span class="eyebrow-num">03</span><span class="eyebrow-rule"></span><span class="eyebrow-txt">Ce qui marche</span></div>
+    <h2 class="sec-title ed">Les 4 vidéos Kleem qui vendent le plus sur le TikTok Shop</h2>
+    <p class="sec-intro">Face caméra, la crème montrée et appliquée, un ton naturel. Regarde-les en entier avant de filmer la tienne.</p>
+    <div class="tv">
+      <div class="tv-item"><video controls preload="metadata" playsinline poster="top-mimie.jpg"><source src="top-mimie.mp4" type="video/mp4"></video><div class="tv-cap">@messgirlmimie</div></div>
+      <div class="tv-item"><video controls preload="metadata" playsinline poster="inspi-grande-soeur.jpg"><source src="inspi-grande-soeur.mp4" type="video/mp4"></video><div class="tv-cap">@ody_milani</div></div>
+      <div class="tv-item"><video controls preload="metadata" playsinline poster="top-aby.jpg"><source src="top-aby.mp4" type="video/mp4"></video><div class="tv-cap">@aby_naturo_stress</div></div>
+      <div class="tv-item"><video controls preload="metadata" playsinline poster="top-nazik.jpg"><source src="top-nazik.mp4" type="video/mp4"></video><div class="tv-cap">@nazik19809</div></div>
+    </div>
+  </section>
   </div>
 
 <div class="container" style="height:40px"></div>
